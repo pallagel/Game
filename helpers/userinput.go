@@ -12,7 +12,7 @@ import (
 
 //GetUserInput - A method to get user input
 func GetUserInput(message string, r *bufio.Reader) (number int, err error) {
-	fmt.Print("Please create the game board : ")
+	fmt.Print(message)
 
 	message, err = r.ReadString('\n')
 
